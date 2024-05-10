@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PcPartPickerActivity">
+
+    <Spinner
+        android:id="@+id/cpuSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="18dp" />
+
+    <Spinner
+        android:id="@+id/motherBoardSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpuSpinner"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="18dp" />
+
+    <Spinner
+        android:id="@+id/ramSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/motherBoardSpinner"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="18dp" />
+
+    <Spinner
+        android:id="@+id/gpuSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ramSpinner"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="18dp" />
+
+    <Spinner
+        android:id="@+id/storageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpuSpinner"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="18dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storageSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:onClick="savePick"/>
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:onClick="cancel"/>
+    </LinearLayout>
+
+</RelativeLayout>

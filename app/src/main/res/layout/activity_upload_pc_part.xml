@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPcPartActivity">
+
+    <Spinner
+        android:id="@+id/brandSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="18dp"
+        />
+
+    <EditText
+        android:id="@+id/modelEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/model"
+        android:inputType="text"
+        android:layout_below="@+id/brandSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" />
+
+    <Spinner
+        android:id="@+id/socketSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modelEditText"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <EditText
+        android:id="@+id/infoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/socketSpinner"
+        android:inputType="text"
+        android:hint="@string/description"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoEditText"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/typeSpinner"
+        android:hint="@string/price"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/priceEditText"
+        >
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:onClick="savePart"
+        android:layout_margin="8dp"/>
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:onClick="cancel"
+        android:layout_margin="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

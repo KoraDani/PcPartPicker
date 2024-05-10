@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">PCPartPicker</string>
+    <string name="name">Név</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="username">Felhasználónév</string>
+    <string name="email">Email cím</string>
+    <string name="repassword">Jelszó Megerősítése</string>
+    <string name="cancel">Cancel</string>
+    <string name="placeholder">Leírás</string>
+    <string name="log_out">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="selector">Selector</string>
+    <string name="add_to_cart">Cart</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="price">Price</string>
+    <string name="save">Save</string>
+    <string name="add_part">Add part</string>
+    <string name="description">Description</string>
+    <string name="socket">Socket</string>
+    <string name="info">Info</string>
+    <string name="type">Type</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="pick_pc_part">Pick PC Part</string>
+
+    <string-array name="model">
+        <item>model1</item>
+        <item>model2</item>
+        <item>model3</item>
+        <item>model4</item>
+        <item>model5</item>
+        <item>model6</item>
+    </string-array>
+    <string-array name="info">
+        <item>info1</item>
+        <item>info2</item>
+        <item>info3</item>
+        <item>info4</item>
+        <item>info5</item>
+        <item>info6</item>
+    </string-array>
+    <string-array name="price">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="image">
+        <item>@drawable/shopping_cart</item>
+        <item>@drawable/shopping_cart</item>
+        <item>@drawable/shopping_cart</item>
+        <item>@drawable/shopping_cart</item>
+        <item>@drawable/shopping_cart</item>
+        <item>@drawable/shopping_cart</item>
+    </string-array>
+
+    <string-array name="brand">
+        <item>Intel</item>
+        <item>AMD</item>
+        <item>Nvidia</item>
+        <item>Kingstone</item>
+        <item>Corsair</item>
+        <item>Asus</item>
+        <item>MSI</item>
+        <item>EVGA</item>
+        <item>NZXT</item>
+        <item>ASRock</item>
+        <item>Samsung</item>
+        <item>Western Digital</item>
+        <item>Seagate</item>
+    </string-array>
+
+    <string-array name="socket">
+        <item>AM4</item>
+        <item>AM4+</item>
+        <item>AM5</item>
+        <item>TRX4</item>
+        <item>TR5</item>
+        <item>LGA 1200</item>
+        <item>LGA 1700</item>
+        <item>LGA 2066</item>
+        <item>LGA 1151</item>
+        <item>LGA 1200</item>
+        <item>PCI-E</item>
+        <item>SATA</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>CPU</item>
+        <item>MOTHERBOARD</item>
+        <item>GPU</item>
+        <item>RAM</item>
+        <item>STORAGE</item>
+    </string-array>
+</resources>

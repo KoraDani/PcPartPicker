@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292637542248",
+    "project_id": "pcpartpicker-5f5a0",
+    "storage_bucket": "pcpartpicker-5f5a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292637542248:android:d33101b20bb05dc7e078dd",
+        "android_client_info": {
+          "package_name": "com.example.pcconf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHEFBsQo2NuWVjuCD56ArG8hoAY0UV64w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
