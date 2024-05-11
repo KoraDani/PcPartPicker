@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".UploadPcPartActivity">
 
+
+    <TextView
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="310dp"
+        android:text="@string/brand"
+        android:textSize="14sp" />
+
     <Spinner
         android:id="@+id/brandSpinner"
         android:layout_width="match_parent"
@@ -15,78 +28,139 @@
         android:layout_marginRight="18dp"
         />
 
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="301dp"
+        android:text="@string/model"
+        android:textSize="14sp" />
+
     <EditText
         android:id="@+id/modelEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/model"
-        android:inputType="text"
         android:layout_below="@+id/brandSpinner"
-        android:layout_marginTop="18dp"
         android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp" />
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="18dp"
+        android:hint="@string/model"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="277dp"
+        android:text="@string/socket"
+        android:textSize="14sp" />
 
     <Spinner
         android:id="@+id/socketSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/modelEditText"
-        android:layout_marginTop="18dp"
         android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"/>
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="18dp" />
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="285dp"
+        android:text="@string/info"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/infoEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/socketSpinner"
-        android:inputType="text"
-        android:hint="@string/description"
-        android:layout_marginTop="18dp"
         android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"/>
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="18dp"
+        android:hint="@string/description"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="282dp"
+        android:text="@string/type"
+        android:textSize="14sp" />
 
     <Spinner
         android:id="@+id/typeSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/infoEditText"
-        android:layout_marginTop="18dp"
         android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"/>
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="18dp" />
+
+    <TextView
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="282dp"
+        android:text="@string/price"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/priceEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
         android:layout_below="@+id/typeSpinner"
-        android:hint="@string/price"
-        android:layout_marginTop="18dp"
         android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"/>
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="18dp"
+        android:hint="@string/price"
+        android:inputType="numberDecimal" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
         android:layout_below="@+id/priceEditText"
-        >
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:onClick="savePart"
-        android:layout_margin="8dp"/>
-    <Button
-        android:id="@+id/cancelButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cancel"
-        android:onClick="cancel"
-        android:layout_margin="8dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="savePart"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="cancel"
+            android:text="@string/cancel" />
     </LinearLayout>
 </RelativeLayout>

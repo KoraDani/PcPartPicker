@@ -27,6 +27,11 @@
     <string name="delete">Delete</string>
     <string name="update">Update</string>
     <string name="pick_pc_part">Pick PC Part</string>
+    <string name="cpu">CPU</string>
+    <string name="motherboard">Motherboard</string>
+    <string name="ram">RAM</string>
+    <string name="gpu">GPU</string>
+    <string name="storage">STORAGE</string>
 
     <string-array name="model">
         <item>model1</item>

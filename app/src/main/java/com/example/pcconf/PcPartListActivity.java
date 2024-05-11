@@ -12,6 +12,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -96,6 +97,8 @@ public class PcPartListActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.part_list_menu, menu);
         return true;
     }
 
@@ -104,8 +107,9 @@ public class PcPartListActivity extends AppCompatActivity {
         if(item.getItemId() == R.id.log_out){
             FirebaseAuth.getInstance().signOut();
             Log.d(LOG_TAG,"log_out");
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             finish();
-            return true;
         }else if (item.getItemId() == R.id.pickPart){
             Intent intent = new Intent(this, PcPartPickerActivity.class);
             startActivity(intent);

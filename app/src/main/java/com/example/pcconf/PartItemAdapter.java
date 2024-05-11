@@ -103,6 +103,7 @@ public class PartItemAdapter extends RecyclerView.Adapter<PartItemAdapter.ViewHo
         private TextView partSocketTextView;
         private TextView partInfoTextView;
         private TextView priceTextView;
+        private TextView typeTextView;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -113,6 +114,7 @@ public class PartItemAdapter extends RecyclerView.Adapter<PartItemAdapter.ViewHo
             partSocketTextView = itemView.findViewById(R.id.partSocketTextView);
             partInfoTextView = itemView.findViewById(R.id.partInfoTextView);
             priceTextView = itemView.findViewById(R.id.priceTextView);
+            typeTextView = itemView.findViewById(R.id.typeTextView);
 
         }
 
@@ -122,7 +124,8 @@ public class PartItemAdapter extends RecyclerView.Adapter<PartItemAdapter.ViewHo
             partModelTextView.setText(currentPart.getModel());
             partSocketTextView.setText(currentPart.getSocket());
             partInfoTextView.setText(currentPart.getInfo());
-            priceTextView.setText(String.valueOf(currentPart.getPrice()));
+            priceTextView.setText(String.valueOf(currentPart.getPrice()).concat(" Ft"));
+            typeTextView.setText(currentPart.getType());
 
             itemView.findViewById(R.id.deleteButton).setOnClickListener(v -> {
                 ((PcPartListActivity)context).deletePart(currentPart);

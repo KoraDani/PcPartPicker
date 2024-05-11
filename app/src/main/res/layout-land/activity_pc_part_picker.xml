@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".PcPartPickerActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/cpuSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <Spinner
         android:id="@+id/cpuSpinner"
         android:layout_width="480dp"
@@ -17,6 +30,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motherboard"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/motherBoardSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpuSpinner"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
         android:id="@+id/motherBoardSpinner"
@@ -29,6 +55,20 @@
         app:layout_constraintTop_toBottomOf="@+id/cpuSpinner"
         app:layout_constraintVertical_bias="0.122" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/ram"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ramSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motherBoardSpinner"
+        app:layout_constraintVertical_bias="1.0" />
+
     <Spinner
         android:id="@+id/ramSpinner"
         android:layout_width="480dp"
@@ -40,6 +80,19 @@
         app:layout_constraintTop_toBottomOf="@+id/motherBoardSpinner"
         app:layout_constraintVertical_bias="0.167" />
 
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/gpu"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/gpuSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramSpinner"
+        app:layout_constraintVertical_bias="1.0" />
+
     <Spinner
         android:id="@+id/gpuSpinner"
         android:layout_width="480dp"
@@ -50,6 +103,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ramSpinner"
         app:layout_constraintVertical_bias="0.176" />
+
+    <TextView
+        android:layout_width="482dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/storage"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/storageSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gpuSpinner"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
         android:id="@+id/storageSpinner"

@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".PcPartPickerActivity">
 
+
+    <TextView
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/cpu"
+        android:textSize="14sp" />
+
     <Spinner
         android:id="@+id/cpuSpinner"
         android:layout_width="match_parent"
@@ -13,6 +27,19 @@
         android:layout_marginLeft="18dp"
         android:layout_marginTop="100dp"
         android:layout_marginRight="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/motherboard"
+        android:textSize="14sp" />
 
     <Spinner
         android:id="@+id/motherBoardSpinner"
@@ -23,6 +50,19 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="18dp" />
 
+    <TextView
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/ram"
+        android:textSize="14sp" />
+
     <Spinner
         android:id="@+id/ramSpinner"
         android:layout_width="match_parent"
@@ -31,6 +71,19 @@
         android:layout_marginLeft="18dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="18dp" />
+
+    <TextView
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/gpu"
+        android:textSize="14sp" />
 
     <Spinner
         android:id="@+id/gpuSpinner"
@@ -41,6 +94,19 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="18dp" />
 
+    <TextView
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/storage"
+        android:textSize="14sp" />
+
     <Spinner
         android:id="@+id/storageSpinner"
         android:layout_width="match_parent"
@@ -49,6 +115,8 @@
         android:layout_marginLeft="18dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="18dp" />
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"

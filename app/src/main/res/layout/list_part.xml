@@ -49,14 +49,23 @@
             android:id="@+id/priceTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/partInfoTextView"
+            android:layout_below="@+id/partModelTextView"
+            android:layout_toEndOf="@+id/typeTextView"
             android:padding="8dp"
-            android:text="@string/price" />
+            android:text="@string/price"/>
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/partBrandTextView"
+            android:padding="8dp"
+            android:text="@string/type" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/priceTextView"
+            android:layout_below="@id/typeTextView"
             android:orientation="horizontal">
 
             <Button
